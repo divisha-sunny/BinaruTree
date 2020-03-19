@@ -21,11 +21,11 @@ public class Main {
         tree.root.right.left = new Node(5);
         //max no of nodes at level i = 2*pow(i-1)
         traversals t = new traversals();
-        System.out.println("In Order");
+        System.out.println("In Order before insertion:");
         t.inorder(tree.root);
-        System.out.println("Post Order");
-        t.postorder(tree.root);
-        System.out.println("Pre Order");
-        t.preorder(tree.root);
+        tree.insert(tree.root,7);
+        System.out.println("Inorder after insertion:");
+        t.inorder(tree.root);
+
     }
 }

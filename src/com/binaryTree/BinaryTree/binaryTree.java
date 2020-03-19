@@ -10,4 +10,14 @@ public class binaryTree {
     public binaryTree(){
         root = null;
     }
+
+    public Node search(Node node, int key){
+        if(node==null || node.getData()==key){
+            return node;
+        }
+        if(node.getData() > key){
+            return search(node.left, key);
+        }
+        return search(node.right, key);
+    }
 }

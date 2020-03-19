@@ -14,12 +14,18 @@ public class Main {
         binaryTree tree = new binaryTree();
         tree.root = new Node(1);
         tree.root.left = new Node(2);
-        tree.root.right = new Node(3);
+        tree.root.right = new Node(9);
         tree.root.left.left = new Node(6);
+        tree.root.left.left.left = new Node(3);
+        tree.root.right.right = new Node(10);
+        tree.root.right.left = new Node(5);
         //max no of nodes at level i = 2*pow(i-1)
         traversals t = new traversals();
+        System.out.println("In Order");
         t.inorder(tree.root);
+        System.out.println("Post Order");
         t.postorder(tree.root);
+        System.out.println("Pre Order");
         t.preorder(tree.root);
     }
 }

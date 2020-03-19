@@ -19,5 +19,7 @@ public class Main {
         //max no of nodes at level i = 2*pow(i-1)
         traversals t = new traversals();
         t.inorder(tree.root);
+        t.postorder(tree.root);
+        t.preorder(tree.root);
     }
 }

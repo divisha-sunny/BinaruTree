@@ -1,6 +1,7 @@
 package com.binaryTree;
 
 import com.binaryTree.BinaryTree.binaryTree;
+import com.binaryTree.BinaryTree.traversals;
 
 import java.util.function.BinaryOperator;
 
@@ -15,5 +16,8 @@ public class Main {
         tree.root.left = new Node(2);
         tree.root.right = new Node(3);
         tree.root.left.left = new Node(6);
+        //max no of nodes at level i = 2*pow(i-1)
+        traversals t = new traversals();
+        t.inorder(tree.root);
     }
 }

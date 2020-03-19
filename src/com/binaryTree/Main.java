@@ -24,7 +24,11 @@ public class Main {
         System.out.println("In Order before insertion:");
         t.inorder(tree.root);
         tree.insert(tree.root,7);
+        tree.insert(tree.root,4);
         System.out.println("Inorder after insertion:");
+        t.inorder(tree.root);
+        tree.delete(tree.root, 5);
+        System.out.println("Inorder after deleting");
         t.inorder(tree.root);
 
     }

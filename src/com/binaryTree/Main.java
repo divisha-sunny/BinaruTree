@@ -21,7 +21,7 @@ public class Main {
         tree.root.right.left = new Node(5);
         //max no of nodes at level i = 2*pow(i-1)
         traversals t = new traversals();
-        System.out.println("In Order before insertion:");
+        /*System.out.println("In Order before insertion:");
         t.inorder(tree.root);
         tree.insert(tree.root,7);
         tree.insert(tree.root,4);
@@ -29,7 +29,8 @@ public class Main {
         t.inorder(tree.root);
         tree.delete(tree.root, 5);
         System.out.println("Inorder after deleting");
-        t.inorder(tree.root);
+        t.inorder(tree.root);*/
+        System.out.println("Height of the tree: "+tree.heightOfTree(tree.root));
 
     }
 }

@@ -28,4 +28,23 @@ public class traversals {
         preorder(node.left);
         preorder(node.right);
     }
+    binaryTree bt = new binaryTree();
+    void printGivenLevel(Node node, int level){
+        if(node == null){
+            return;
+        }
+        if(level == 1){
+            System.out.println(node.getData()+" ");
+        }
+        else if(level > 1){
+            printGivenLevel(node.left, level-1);
+            printGivenLevel(node.right, level-1);
+        }
+    }
+    public void levelOrder(Node node){
+        int h = bt.heightOfTree(node);
+        for(int i = 1 ; i<=h; i++){
+            printGivenLevel(node, i);
+        }
+    }
 }

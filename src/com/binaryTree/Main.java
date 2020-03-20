@@ -31,6 +31,8 @@ public class Main {
         System.out.println("Inorder after deleting");
         t.inorder(tree.root);*/
         System.out.println("Height of the tree: "+tree.heightOfTree(tree.root));
+        System.out.println("Level order traversal");
+        t.levelOrder(tree.root);
 
     }
 }
